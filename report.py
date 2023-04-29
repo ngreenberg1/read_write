@@ -22,7 +22,7 @@ product_master = {}
 with open(args.product_master, newline='') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
-        product_master[int(row[0])] = {'Name': row[1], 'Price': float(row[2]), 'LotSize': int(row[3])}
+        product_master[int(row[1])] = {'Name': row[2], 'Price': float(row[3]), 'LotSize': int(row[4])}
 
 # Calculate total gross revenue for each team and product from sales data
 team_revenue = {}
